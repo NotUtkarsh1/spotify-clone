@@ -1,0 +1,89 @@
+.border {
+    border: 2px solid red ;
+    margin: 3px ;
+  }
+  .flex{ 
+    display: flex;
+  }
+  .justify-center{
+      justify-content: center;
+  }
+  .items-center{
+      align-items: center;
+  }
+  .bg-black{
+    background: #000;
+    color: white;
+  }
+  .invert{
+    filter: invert(1);
+  }
+  .bg-grey{
+    background: #121212;
+  }
+  .rounded{
+    border: radius 7px; 
+  }
+  .m-1{
+    margin: 5px;
+  }
+  .p-1{
+    padding: 10px;
+  }
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Themed Scrollbar</title>
+  <style>
+    body {
+      background-color: #121212; /* Dark background */
+      color: #e0e0e0; /* Light text color */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    /* WebKit scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #777;
+    }
+    ::-webkit-scrollbar-track {
+      background: #222;
+    }
+
+    /* Firefox scrollbar styling */
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: #555 #222;
+    }
+  /* Scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Roundness of the handle */
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Color of the handle when hovered */
+}
+
+/* Scrollbar track (part where the handle moves) */
+::-webkit-scrollbar-track {
+  background: #222; /* Color of the track */
+}
+
